@@ -1,0 +1,8 @@
+blurred_value=get(hObject,'Value');
+set(handles.blurr_value,'string',blurred_value*2);
+global im;
+axes(handles.axes1);
+blurr_image=im;
+H = fspecial('disk',blurred_value+0.001);
+blurr1 = imfilter(blurr_image,H,'replicate');
+imshow(blurr1);
