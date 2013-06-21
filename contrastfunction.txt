@@ -1,0 +1,9 @@
+global aa  im 
+axes(handles.axes1)
+aa=get(hObject,'Value');
+aa=aa+0.21;
+aa=1.21-aa;
+
+set(handles.contrast_value,'string',floor(100.45-((aa*100)/0.789-26.166))+1);
+RGB2 = imadjust(im,[.2 .2 0; aa aa 1],[]);
+imshow(RGB2);
