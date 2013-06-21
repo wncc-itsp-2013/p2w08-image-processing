@@ -1,0 +1,12 @@
+global im im2;
+[path,user_cance]=imgetfile();
+if user_cance
+    msgbox(sprintf('Error'),'Error','Error');
+    return
+end
+im=imread(path);
+im=im2double(im); %converts to double
+im2=im; %for backup process :)
+axes(handles.axes2);
+imshow(im);
+axes(handles.axes1);
