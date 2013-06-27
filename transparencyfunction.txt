@@ -1,0 +1,8 @@
+global im;
+
+op_image=im;
+imshow(op_image);
+op_value=get(hObject,'Value');
+
+alpha(1-op_value);
+set(handles.trans_value,'string',(op_value*100));
