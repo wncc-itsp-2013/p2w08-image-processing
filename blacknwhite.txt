@@ -1,0 +1,4 @@
+global im;
+        imbw=im;
+        axes(handles.axes1);
+        imshow(im2bw(imbw));
