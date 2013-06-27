@@ -1,0 +1,5 @@
+imblack=im;
+imblack=1-im;
+axes(handles.axes1);
+imshow(imblack);
+final_image=imblack;
