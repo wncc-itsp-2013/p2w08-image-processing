@@ -1,0 +1,8 @@
+rotate_im=im;
+a=get(hObject,'Value');
+
+j=imrotate(rotate_im,a);
+
+imshow(j);
+set(handles.rotate_value,'string',a);
+final_image=j;
